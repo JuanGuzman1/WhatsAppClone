@@ -5,7 +5,7 @@ import * as React from "react";
 import { Fontisto } from "@expo/vector-icons";
 import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
-import TabOneScreen from "../screens/TabOneScreen";
+import ChatsScreen from "../screens/ChatsScreen";
 import TabTwoScreen from "../screens/TabTwoScreen";
 import { MainTabParamList, TabOneParamList, TabTwoParamList } from "../types";
 
@@ -40,7 +40,7 @@ export default function MainTabNavigator() {
           tabBarIcon: ({ color }) => <Fontisto name="camera" color={color} size={18}/>,
         }}
       />
-      <MainTab.Screen name="Chats" component={TabTwoNavigator} options={{}} />
+      <MainTab.Screen name="Chats" component={ChatsScreen} options={{}} />
       <MainTab.Screen name="Status" component={TabTwoNavigator} options={{}} />
       <MainTab.Screen name="Calls" component={TabTwoNavigator} options={{}} />
     </MainTab.Navigator>
@@ -65,7 +65,7 @@ function TabOneNavigator() {
     <TabOneStack.Navigator>
       <TabOneStack.Screen
         name="TabOneScreen"
-        component={TabOneScreen}
+        component={ChatsScreen}
         options={{ headerTitle: "Tab One Title" }}
       />
     </TabOneStack.Navigator>
