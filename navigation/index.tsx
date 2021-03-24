@@ -96,6 +96,7 @@ function RootNavigator() {
         component={ChatRoomScreen}
         options={({ route }) => ({
           title: route.params.name,
+          id:  route.params.id,
           headerRight: () => (
             <View
               style={{
