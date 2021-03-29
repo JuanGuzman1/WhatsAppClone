@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { View, FlatList, ImageBackground } from "react-native";
+import {
+  View,
+  FlatList,
+  ImageBackground,
+  KeyboardAvoidingView,
+  Platform,
+} from "react-native";
 import { useRoute } from "@react-navigation/native";
 import ChatMessage from "../components/ChatMessage";
 import BG from "../assets/images/BG.png";
